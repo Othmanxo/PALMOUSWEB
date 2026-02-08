@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Palmous — Feel the Future of Nature</title>
+  <meta name="description" content="Palmous — luxury vegan leather crafted from date palm branches." />
+  <meta name="theme-color" content="#0e241e" />
+  <style>
+    :root{
+      --bg:#fbf7ee;
+      --ink:#0e241e;
+      --muted:#4b615a;
+      --line:rgba(14,36,30,.14);
+      --card:rgba(255,255,255,.58);
+      --shadow:0 20px 60px rgba(14,36,30,.10);
+      --radius:22px;
+      --max:1140px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(900px 520px at 20% -10%, rgba(185,154,83,.14), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(14,36,30,.10), transparent 60%),
+        var(--bg);
+      color:var(--ink);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:22px}
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(12px) saturate(140%);
+      background: linear-gradient(to bottom, rgba(251,247,238,.86), rgba(251,247,238,.62));
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;border-radius:16px;object-fit:cover;box-shadow:0 12px 32px rgba(14,36,30,.10);border:1px solid var(--line);background:#fff}
+    .brand .name{font-weight:720;letter-spacing:.2px}
+    .brand .tag{font-size:12px;color:var(--muted);margin-top:2px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 14px;border-radius:999px;
+      border:1px solid rgba(14,36,30,.18);
+      background:rgba(255,255,255,.55);
+      box-shadow:0 10px 26px rgba(14,36,30,.08);
+      font-weight:650;font-size:14px;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(14,36,30,.98), rgba(14,36,30,.86));
+      color:#fff;border:1px solid rgba(14,36,30,.35);
+    }
+    .hero{
+      padding:34px 0 10px;
+      display:grid;grid-template-columns:1.05fr .95fr;gap:16px;align-items:stretch;
+    }
+    @media (max-width: 920px){.hero{grid-template-columns:1fr}}
+    .card{
+      border:1px solid var(--line);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroText{padding:24px}
+    h1{margin:0;font-size:clamp(30px,4.2vw,52px);line-height:1.03;letter-spacing:-.8px}
+    .slogan{margin:10px 0 18px;font-size:14px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .heroImg img{width:100%;height:100%;display:block;object-fit:cover;min-height:360px}
+    .section{padding:22px 0}
+    .sectionTitle{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:12px}
+    .sectionTitle b{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .tile{grid-column: span 6}
+    .tile.wide{grid-column: span 12}
+    @media (max-width: 920px){.tile{grid-column: span 12}}
+    .tile img{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio: 16/10}
+    footer{padding:24px 0 34px;color:var(--muted);font-size:12px}
+    .mini{opacity:.9}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <img src="assets/logo.png" alt="Palmous logo" />
+          <div>
+            <div class="name">Palmous</div>
+            <div class="tag">Luxury palm-branch vegan leather</div>
+          </div>
+        </div>
+        <a class="btn primary" id="waTop" href="#" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card heroText">
+        <div class="slogan">Feel the Future of Nature</div>
+        <h1>Luxury essentials<br/>made from date palm branches.</h1>
+        <div class="actions" style="margin-top:18px">
+          <a class="btn primary" id="waHero" href="#" rel="noopener">Request a sample</a>
+          <a class="btn" href="#gallery">View collection</a>
+        </div>
+      </div>
+      <div class="card heroImg">
+        <img src="assets/products_1.png" alt="Palmous product collection" />
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="sectionTitle">
+        <b>Collection</b>
+        <span class="mini">Wallets • Bags • Na’al • Belts • Watch straps • Jackets</span>
+      </div>
+
+      <div class="grid">
+        <div class="card tile wide">
+          <img src="assets/products_3.png" alt="Palmous accessories collage" />
+        </div>
+        <div class="card tile">
+          <img src="assets/products_2.png" alt="Palmous accessories set" />
+        </div>
+        <div class="card tile">
+          <img src="assets/products_4.png" alt="Palmous accessories set" />
+        </div>
+        <div class="card tile">
+          <img src="assets/products_5.png" alt="Palmous accessories set" />
+        </div>
+        <div class="card tile">
+          <img src="assets/products_1.png" alt="Palmous hero collection" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card" style="padding:18px 18px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+          <div>
+            <div style="font-weight:720">Concierge ordering</div>
+            <div class="mini" style="margin-top:6px">Fast quotes • personalization • delivery</div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" id="waCta" href="#" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn" id="emailCta" href="#">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div><span style="font-weight:650">Palmous</span> <span class="mini">© <span id="year"></span></span></div>
+      <div class="mini" style="margin-top:6px">Replace WhatsApp number + email in the script.</div>
+    </footer>
+  </main>
+
+  <script>
+    // ✅ EDIT THESE
+    const WHATSAPP_NUMBER = "97400000000"; // Qatar format: 974XXXXXXXX
+    const EMAIL = "hello@palmous.com";
+
+    const msg = encodeURIComponent("Hi Palmous — I’d like to see the latest designs and request a sample.");
+    const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+    ["waTop","waHero","waCta"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = wa;
+    });
+    document.getElementById("emailCta").href = `mailto:${EMAIL}?subject=${encodeURIComponent("Palmous inquiry")}&body=${msg}`;
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
