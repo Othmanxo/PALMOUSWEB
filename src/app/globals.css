@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #080a08;
+  --foreground: #f7f4ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(94, 119, 53, 0.28), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(214, 166, 78, 0.14), transparent 26%),
+    linear-gradient(135deg, #080a08 0%, #0d110d 48%, #10100c 100%);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.bg-radial {
+  background: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.11), transparent 30%),
+    radial-gradient(circle at 30% 70%, rgba(122,143,56,0.18), transparent 35%),
+    rgba(0,0,0,0.34);
+}
+
+.shadow-soft {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 0 1px rgba(110, 231, 183, 0.1), 0 0 40px rgba(110, 231, 183, 0.08);
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  transition: 180ms ease;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.mini-stat {
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 12px;
+  background: rgba(0,0,0,0.20);
+}
+
+.mini-stat span {
+  display: block;
+  color: #a3a3a3;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.mini-stat b {
+  display: block;
+  margin-top: 6px;
+  color: white;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+}
